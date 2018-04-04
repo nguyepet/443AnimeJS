@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    height: 100%;
+    background: rgb(126,187,234); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(126,187,234,1) 0%, rgba(85,128,244,1) 40%, rgba(6,108,216,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(126,187,234,1) 0%,rgba(85,128,244,1) 40%,rgba(6,108,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(126,187,234,1) 0%,rgba(85,128,244,1) 40%,rgba(6,108,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ebbea', endColorstr='#066cd8',GradientType=0 ); /* IE6-9 */
+} 
+
+.container {
+    background: #fff;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+
+header{
+    background: #8ae2ff;
+}
+
+h1{
+    margin: 0;
+    padding: 15px;
+    font-size: 38px;
+}
+
+/* Picker CSS */
+.picker{
+    font-size: 20px;
+}
+
+select {
+    font-size: 18px;
+    margin: 10px;
+}
+
+button {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* Main Compare CSS */
+
+.teams-container{
+    background: #d3d3d3;
+    min-height: 750px;
+}
+
+.teams{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#team1stats{
+    background: #ffff0073;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#team2stats{
+    background: #0000ff8f;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#teamcomparison{
+    background: #ff00006b;
+    height: 250px;
+    width: 920px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Footer CSS*/
+
+footer p{
+    margin: 0;
+}

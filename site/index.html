@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Comparing Teams</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Teams Comparing App!</h1>
+            </header>
+
+            <div class="comparer">
+                <div class="picker">
+                    <select id="t1">
+                        <option value="yellow">Team Yellow</option>
+                        <option value="blue">Team Blue</option>
+                        <option value="orange">Team Orange</option>
+                        <option value="purple">Team Purple</option>
+                      </select>
+
+                      <span>VS</span>
+
+                    <select id="t2">
+                        <option value="red">Team Red</option>
+                        <option value="green">Tean Green</option>
+                        <option value="white">Team White</option>
+                        <option value="black">Team Black</option>
+                    </select>
+
+                    <br/>
+                    <button>Compare</button>
+                </div>
+
+                <div class="teams-container">
+                    <div class="teams">
+                        <div id="team1stats">
+                            <p>In here would be teams ones statistics</p>
+                        </div>
+            
+                        <div id="team2stats">
+                            <p>In here would be team twos statisitics</p>
+                        </div>
+                    </div>
+
+                    <div id="teamcomparison">
+                        <p>In here would compare there stats, saying which team is better at what etc.</p>
+                    </div>
+                </div>
+            
+
+            <footer>
+                <p> &#169; Team 8</p>
+            </footer>
+        </div>
+    </body>
+</html>
