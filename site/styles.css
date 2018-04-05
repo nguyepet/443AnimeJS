@@ -45,7 +45,7 @@ button {
 
 .teams-container{
     background: #d3d3d3;
-    min-height: 750px;
+    min-height: 800px;
 }
 
 .teams{
@@ -72,7 +72,7 @@ button {
 
 #teamcomparison{
     background: #ff00006b;
-    height: 250px;
+    height: 280px;
     width: 920px;
     margin: 10px auto;
     border-radius: 10px;
