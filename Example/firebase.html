@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    
+</head>
+<body>
+
+    
+    
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBXXbcHKem_8HlGGNBMZHPuEU_dPGYocJQ",
+          authDomain: "project-acfb6.firebaseapp.com",
+          databaseURL: "https://project-acfb6.firebaseio.com",
+          projectId: "project-acfb6",
+          storageBucket: "project-acfb6.appspot.com",
+          messagingSenderId: "353331136500"
+        };
+        firebase.initializeApp(config);
+
+        var database = firebase = firebase.database();
+        var ref = database.ref('bteams');
+
+        ref.on('value', gotData, errData);
+
+        function gotData(data){
+           
+            var teams = data.val();
+            var keys = Object.keys(teams);
+
+            //this loops thur the firebase 
+            for (var i = 0; i < keys.length; i++){
+                var k = keys[i];
+                var name = teams[k].name;
+                var points = teams[k].points;
+                var rebounds = teams[k].rebounds;
+                var assists = teams[k].assists;
+                
+                //this returns the name from firebase
+                console.log(name, points, rebounds, assists);
+            }
+        }
+
+        function errData(){ 
+            console.log("Error");
+            console.log(err);
+        }
+
+      </script>
+</body>
+</html>
