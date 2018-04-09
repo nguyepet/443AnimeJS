@@ -16,7 +16,8 @@ body{
 }
 
 header{
-    background: #8ae2ff;
+    background: #232323;
+    color: #eee;
 }
 
 h1{
@@ -46,6 +47,7 @@ button {
 .teams-container{
     background: #d3d3d3;
     min-height: 800px;
+    margin-bottom: -10px;
 }
 
 .teams{
@@ -55,33 +57,42 @@ button {
 }
 
 #team1stats{
-    background: #ffff0073;
+    background: #232323;
     width: 450px;
     height: 450px;
     border-radius: 10px;
     margin: 10px;
+    color: #eee;
 }
 
 #team2stats{
-    background: #0000ff8f;
+    background: #232323;
     width: 450px;
     height: 450px;
     border-radius: 10px;
     margin: 10px;
+    color: #eee;
 }
 
 #teamcomparison{
-    background: #ff00006b;
+    background: #232323;
     height: 280px;
     width: 920px;
     margin: 10px auto;
     border-radius: 10px;
+    color: #eee;
 }
 
 /* Footer CSS*/
+footer{
+    background: #232323;
+}
 
 footer p{
     margin: 0;
+    color: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Basketball Animation CSS */

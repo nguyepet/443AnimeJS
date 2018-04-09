@@ -6,10 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    
+    <style>
+        #team1stats{
+            background: #ffff0073;
+            width: 450px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 80px;
+            padding-top: 100px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
+    <div id="team1stats">
 
+    </div>
     
     
     <script>
@@ -28,30 +41,43 @@
         var ref = database.ref('bteams');
 
         ref.on('value', gotData, errData);
+        
+        var tName;
+        var tPoints;
+        var tRebounds;
+        var tAssists;
+
+        var selectedTeam = 1;
 
         function gotData(data){
            
             var teams = data.val();
             var keys = Object.keys(teams);
-
-            //this loops thur the firebase 
-            for (var i = 0; i < keys.length; i++){
-                var k = keys[i];
-                var name = teams[k].name;
-                var points = teams[k].points;
-                var rebounds = teams[k].rebounds;
-                var assists = teams[k].assists;
-                
-                //this returns the name from firebase
-                console.log(name, points, rebounds, assists);
-            }
+            
+            tName = teams[keys[selectedTeam]].name;
+            tPoints = teams[keys[selectedTeam]].points;
+            tRebounds = teams[keys[selectedTeam]].rebounds;
+            tAssists = teams[keys[selectedTeam]].assists;
         }
 
         function errData(){ 
             console.log("Error");
             console.log(err);
         }
-
+        
+        //
+        var team = "team1";
+        var team1 = document.getElementById("team1stats");
+        
+        function addTeamData(){
+            team1.innerHTML = 
+                "<h3>Team Name: " + tName + "</h3>" +
+                "<h3>Team Points: " + tPoints + "</h3>" +
+                "<h3>Team Rebounds: " + tRebounds + "</h3>" +
+                "<h3>Team Assists: " + tAssists + "</h3>" 
+            ; 
+        }
+        
       </script>
 </body>
 </html>
