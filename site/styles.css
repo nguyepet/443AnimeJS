@@ -83,3 +83,24 @@ button {
 footer p{
     margin: 0;
 }
+
+/* Basketball Animation CSS */
+
+.ball{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    background: rgb(54, 54, 54);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+    margin-top: 150px;
+}
+
+.b-container {
+    background: #232323;
+    height: 450px;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+}
