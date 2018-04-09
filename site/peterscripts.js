@@ -88,7 +88,7 @@ var config = {
   var btn = document.getElementById("btn");
   btn.addEventListener("click", function(){
     var t1 = parseInt(selector1.options[selector1.selectedIndex].value);
-    var t2 = parseInt(selector2.options[selector2.selectedIndex].value);
+    var t2 = parseInt(selector2.options[selector2.selectedIndex].value) + 1;
 
     addTeamData(t1, t2);
   });
